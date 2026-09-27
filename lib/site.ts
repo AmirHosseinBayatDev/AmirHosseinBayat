@@ -1,4 +1,5 @@
 export const site = {
+  url: "https://amirhosseinbayat.ir",
   name: "امیرحسین بیات",
   nameEn: "AmirHossein Bayat",
   role: "توسعه‌دهنده وب",

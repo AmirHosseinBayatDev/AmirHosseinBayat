@@ -4,8 +4,20 @@ import { site } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: `${site.name} — به‌زودی`,
   description: site.description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    siteName: site.nameEn,
+    title: `${site.name} — به‌زودی`,
+    description: site.description,
+    locale: "fa_IR",
+  },
 };
 
 export const viewport: Viewport = {
