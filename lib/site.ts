@@ -2,21 +2,40 @@ export const site = {
   name: "امیرحسین بیات",
   nameEn: "AmirHossein Bayat",
   role: "توسعه‌دهنده وب",
-  subtitle: "توسعه‌دهنده فرانت‌اند با تخصص React",
-  bio: "متخصص در ایجاد رابط‌های کاربری پویا و پاسخگو با استفاده از تکنولوژی‌های مدرن وب. متعهد به نوشتن کد تمیز و کارآمد برای ایجاد تجربه‌های کاربری عالی.",
-  projectsNote: "پروژه‌های من را در پایین صفحه (با لینک‌های گیت‌هاب) ببینید.",
+  subtitleRole: "Web Developer",
+  subtitleStack: "React / Next.js",
+  bioLine1: "فعلاً تمرکزم روی توسعه وب و ساخت پروژه‌های واقعی است؛",
+  bioLine2: "از طراحی رابط کاربری تا پیاده‌سازی و تکمیل محصول",
+  projectsInProgressHeading: "پروژه‌های در حال توسعه",
+  inProgressProjects: [
+    {
+      name: "SerikaShop",
+      image: "/serikashop.png",
+      imageAlt: "لوگوی SerikaShop",
+      descriptionLine1:
+        "استودیوی خلق کفش‌های هنری؛ از انیمه، انیمیشن و گیمینگ تا هر ایده‌ای که در ذهن دارید.",
+      descriptionLine2:
+        "مجموعه‌ای از آثار آماده و طراحی‌های اختصاصی که با هنر دست خلق می‌شوند",
+      statusLabel: "در حال توسعه",
+      viewLabel: "مشاهده پروژه",
+      url: "https://serikashop.ir",
+    },
+  ],
   photo: "/amir.jpg",
   year: "2026",
   copyright: "© 2026 AmirHossein Bayat",
   headline: [
     { text: "پورتفولیوی" },
-    { text: "توسعه‌دهنده" },
-    { text: "فرانت‌اند.", accent: true },
+    { text: "توسعه‌دهنده", inlineAccent: "وب" },
     { text: "به‌زودی..." },
   ],
+  heroDescriptionLine1:
+    "اینجا پروژه‌هایی را که در مسیر توسعه وب می‌سازم و تکمیل می‌کنم،",
+  heroDescriptionLine2:
+    "به نمایش می‌گذارم؛ از رابط کاربری تا پیاده‌سازی با React و Next.js.",
   description:
-    "این سایت مجموعه‌ای از پروژه‌های من با تکیه بر React و Next.js، رابط‌های کاربری تمیز و راه‌حل‌های نوآورانه را به نمایش می‌گذارد. آماده کشف مهارت‌های من باشید.",
-  launchNote: "در حال تکمیل نهایی پورتفولیو... آماده برای دیدن؟",
+    "اینجا پروژه‌هایی را که در مسیر توسعه وب می‌سازم و تکمیل می‌کنم، به نمایش می‌گذارم؛ از رابط کاربری تا پیاده‌سازی با React و Next.js.",
+  launchNote: "در حال تکمیل پورتفولیو...",
   cardFooter: "پورتفولیوی جدید به‌زودی",
   instagramUrl: "https://www.instagram.com/AmirHosseinBayatDev/",
   telegramUrl: "https://t.me/AmirHosseinBayatDev",

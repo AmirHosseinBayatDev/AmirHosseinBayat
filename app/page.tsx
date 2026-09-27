@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Clock3 } from "lucide-react";
+import { ChevronLeft, Clock3 } from "lucide-react";
 import { site } from "@/lib/site";
 
 const particles = [
@@ -56,6 +56,59 @@ function GitHubIcon() {
   );
 }
 
+function ProjectsInProgress() {
+  return (
+    <section className="projects-in-progress" aria-labelledby="projects-in-progress-heading">
+      <h3 id="projects-in-progress-heading" className="projects-in-progress-heading">
+        <span className="projects-live-dot" aria-hidden="true" />
+        {site.projectsInProgressHeading}
+      </h3>
+      <ul className="projects-in-progress-list">
+        {site.inProgressProjects.map((project) => (
+          <li key={project.name}>
+            <article className="project-spotlight">
+              <div className="project-spotlight-glow" aria-hidden="true" />
+              <div className="project-spotlight-body">
+                <div className="project-spotlight-avatar">
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width={48}
+                    height={48}
+                    className="project-spotlight-photo"
+                  />
+                </div>
+                <div className="project-spotlight-copy">
+                  <div className="project-spotlight-title-row">
+                    <p className="project-spotlight-name" dir="ltr" lang="en">
+                      {project.name}
+                    </p>
+                    <span className="project-spotlight-status">{project.statusLabel}</span>
+                  </div>
+                  <p className="project-spotlight-desc">
+                    {project.descriptionLine1}
+                    <br />
+                    {project.descriptionLine2}
+                  </p>
+                  <a
+                    className="project-spotlight-link"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ChevronLeft size={15} strokeWidth={2.25} aria-hidden="true" />
+                    <span>{project.viewLabel}</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function ProfileCard() {
   return (
     <article className="profile-card">
@@ -76,10 +129,20 @@ function ProfileCard() {
         <div className="profile-heading">
           <p className="eyebrow">{site.role}</p>
           <h2>{site.name}</h2>
-          <p className="profile-subtitle">{site.subtitle}</p>
+          <p className="profile-subtitle" dir="ltr" lang="en">
+            <span>{site.subtitleRole}</span>
+            <span className="profile-subtitle-sep" aria-hidden="true">
+              ·
+            </span>
+            <span className="profile-subtitle-stack">{site.subtitleStack}</span>
+          </p>
         </div>
-        <p className="profile-bio">{site.bio}</p>
-        <p className="profile-projects">{site.projectsNote}</p>
+        <p className="profile-bio">
+          {site.bioLine1}
+          <br />
+          {site.bioLine2}
+        </p>
+        <ProjectsInProgress />
       </div>
 
       <div className="card-footer">
@@ -129,13 +192,25 @@ export default function Page() {
         <div className="hero-copy">
           <h1 id="page-title">
             {site.headline.map((line, index) => (
-              <span key={line.text}>
-                {index > 0 ? <br /> : null}
-                {"accent" in line && line.accent ? <em>{line.text}</em> : line.text}
+              <span key={`${line.text}-${index}`} className="headline-line">
+                {"inlineAccent" in line && line.inlineAccent ? (
+                  <span className="headline-fused">
+                    <span className="headline-fused-main">{line.text}</span>
+                    <span className="headline-tail">{line.inlineAccent}</span>
+                  </span>
+                ) : "accent" in line && line.accent ? (
+                  <em>{line.text}</em>
+                ) : (
+                  line.text
+                )}
               </span>
             ))}
           </h1>
-          <p className="hero-description">{site.description}</p>
+          <p className="hero-description">
+            {site.heroDescriptionLine1}
+            <br />
+            {site.heroDescriptionLine2}
+          </p>
           <div className="launch-note">
             <Clock3 size={16} />
             <span>{site.launchNote}</span>
