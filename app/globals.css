@@ -66,14 +66,18 @@ h1 em { font-family: var(--font-estedad); font-style: normal; font-weight: 400; 
 .projects-live-dot { width: 6px; height: 6px; border-radius: 50%; background: #5b8cff; box-shadow: 0 0 0 0 rgba(91,140,255,.55); animation: project-pulse 2.4s ease-out infinite; }
 .project-spotlight { position: relative; overflow: hidden; border-radius: 16px; border: 1px solid rgba(133,164,255,.22); background: linear-gradient(145deg, rgba(22,34,62,.72), rgba(10,14,28,.55)); box-shadow: inset 0 1px rgba(255,255,255,.08); }
 .project-spotlight-glow { position: absolute; inset: -40% auto auto -20%; width: 55%; height: 120%; background: radial-gradient(circle, rgba(180,60,70,.18), transparent 68%); pointer-events: none; }
+.project-spotlight-logo .project-spotlight-glow { background: radial-gradient(circle, rgba(91,140,255,.14), transparent 68%); }
 .project-spotlight-body { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; padding: 14px 14px 13px; }
 .project-spotlight-avatar { position: relative; flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; padding: 2px; background: linear-gradient(145deg, rgba(180,48,58,.85), rgba(40,44,58,.9)); border: 1px solid rgba(220,90,90,.35); box-shadow: 0 8px 22px rgba(0,0,0,.28); }
 .project-spotlight-photo { width: 100%; height: 100%; border-radius: 50%; object-fit: contain; background: #08080c; }
+.project-spotlight-avatar-logo { padding: 0; border: none; background: none; box-shadow: none; border-radius: 0; }
+.project-spotlight-photo-logo { border-radius: 0; background: transparent; object-fit: contain; }
 .project-spotlight-copy { min-width: 0; }
 .project-spotlight-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .project-spotlight-name { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: -.02em; color: #eef2ff; }
 .project-spotlight-status { flex-shrink: 0; padding: 3px 8px; border-radius: 999px; font-size: 9px; letter-spacing: .06em; color: #c8d8ff; background: rgba(91,140,255,.16); border: 1px solid rgba(133,164,255,.28); }
 .project-spotlight-desc { margin: 6px 0 0; color: #9aa8c3; font-size: 11px; line-height: 1.55; }
+.project-spotlight-desc-strong { font-weight: 600; color: #c4cee0; }
 .project-spotlight-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; color: #8eb2ff; font-size: 11px; font-weight: 500; transition: color .25s, gap .25s, transform .25s; }
 .project-spotlight-link:hover { color: #fff; gap: 7px; }
 .project-spotlight-link:focus-visible { outline: 2px solid rgba(142,178,255,.65); outline-offset: 3px; border-radius: 4px; }

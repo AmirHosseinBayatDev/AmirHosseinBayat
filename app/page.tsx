@@ -66,16 +66,32 @@ function ProjectsInProgress() {
       <ul className="projects-in-progress-list">
         {site.inProgressProjects.map((project) => (
           <li key={project.name}>
-            <article className="project-spotlight">
+            <article
+              className={
+                "logoAvatar" in project && project.logoAvatar
+                  ? "project-spotlight project-spotlight-logo"
+                  : "project-spotlight"
+              }
+            >
               <div className="project-spotlight-glow" aria-hidden="true" />
               <div className="project-spotlight-body">
-                <div className="project-spotlight-avatar">
+                <div
+                  className={
+                    "logoAvatar" in project && project.logoAvatar
+                      ? "project-spotlight-avatar project-spotlight-avatar-logo"
+                      : "project-spotlight-avatar"
+                  }
+                >
                   <Image
                     src={project.image}
                     alt={project.imageAlt}
                     width={48}
                     height={48}
-                    className="project-spotlight-photo"
+                    className={
+                      "logoAvatar" in project && project.logoAvatar
+                        ? "project-spotlight-photo project-spotlight-photo-logo"
+                        : "project-spotlight-photo"
+                    }
                   />
                 </div>
                 <div className="project-spotlight-copy">
@@ -88,7 +104,14 @@ function ProjectsInProgress() {
                   <p className="project-spotlight-desc">
                     {project.descriptionLine1}
                     <br />
-                    {project.descriptionLine2}
+                    {"descriptionLine2Emphasis" in project &&
+                    project.descriptionLine2Emphasis ? (
+                      <strong className="project-spotlight-desc-strong">
+                        {project.descriptionLine2}
+                      </strong>
+                    ) : (
+                      project.descriptionLine2
+                    )}
                   </p>
                   <a
                     className="project-spotlight-link"
@@ -196,7 +219,6 @@ export default function Page() {
                 {"inlineAccent" in line && line.inlineAccent ? (
                   <span className="headline-fused">
                     <span className="headline-fused-main">{line.text}</span>
-                    <span className="headline-tail">{line.inlineAccent}</span>
                   </span>
                 ) : "accent" in line && line.accent ? (
                   <em>{line.text}</em>

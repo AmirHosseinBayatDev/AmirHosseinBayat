@@ -17,9 +17,23 @@ export const site = {
         "استودیوی خلق کفش‌های هنری؛ از انیمه، انیمیشن و گیمینگ تا هر ایده‌ای که در ذهن دارید.",
       descriptionLine2:
         "مجموعه‌ای از آثار آماده و طراحی‌های اختصاصی که با هنر دست خلق می‌شوند",
-      statusLabel: "در حال توسعه",
+      statusLabel: "تکمیل شده",
       viewLabel: "مشاهده پروژه",
       url: "https://serikashop.ir",
+    },
+    {
+      name: "Negari",
+      image: "/negari.png",
+      imageAlt: "لوگوی Negari",
+      logoAvatar: true,
+      descriptionLine1:
+        "برند «نگاری» با هدف ارائه خدمات و محصولات تخصصی رنگ مو و آمبره، هویتی را طلب می‌کرد که در عین لوکس بودن، روح سرکش، پویا و مدگرای نسل جوان را منعکس کند.",
+      descriptionLine2:
+        "استراتژی اصلی در این دیزاین، فاصله گرفتن از فرم‌های سنتی و کلیشه‌ای سالن‌های زیبایی و حرکت به سمت «هویت فشن‌محور (Fashion-Forward Identity)» بوده است.",
+      descriptionLine2Emphasis: true,
+      statusLabel: "در حال توسعه",
+      viewLabel: "بزودی",
+      url: "#",
     },
   ],
   photo: "/amir.jpg",
@@ -27,7 +41,7 @@ export const site = {
   copyright: "© 2026 AmirHossein Bayat",
   headline: [
     { text: "پورتفولیوی" },
-    { text: "توسعه‌دهنده", inlineAccent: "وب" },
+    { text: "توسعه‌دهنده وب",},
     { text: "به‌زودی..." },
   ],
   heroDescriptionLine1:
