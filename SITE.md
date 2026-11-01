@@ -35,3 +35,4 @@ The footer credit is in English: `© 2026 AmirHossein Bayat`.
 ## Stack
 
 Next.js (App Router), React, TypeScript, Tailwind CSS 4.
+
