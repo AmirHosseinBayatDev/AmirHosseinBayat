@@ -7,7 +7,7 @@ export const site = {
   subtitleStack: "React / Next.js",
   bioLine1: "فعلاً تمرکزم روی توسعه وب و ساخت پروژه‌های واقعی است؛",
   bioLine2: "از طراحی رابط کاربری تا پیاده‌سازی و تکمیل محصول",
-  projectsInProgressHeading: "پروژه‌های در حال توسعه",
+  projectsInProgressHeading: "پروژه‌های تکمیل شده",
   inProgressProjects: [
     {
       name: "SerikaShop",
@@ -27,13 +27,13 @@ export const site = {
       imageAlt: "لوگوی Negari",
       logoAvatar: true,
       descriptionLine1:
-        "برند «نگاری» با هدف ارائه خدمات و محصولات تخصصی رنگ مو و آمبره، هویتی را طلب می‌کرد که در عین لوکس بودن، روح سرکش، پویا و مدگرای نسل جوان را منعکس کند.",
+        "برند تخصصی رنگ مو و آمبره با هویتی لوکس و مدگرا برای نسل جوان.",
       descriptionLine2:
-        "استراتژی اصلی در این دیزاین، فاصله گرفتن از فرم‌های سنتی و کلیشه‌ای سالن‌های زیبایی و حرکت به سمت «هویت فشن‌محور (Fashion-Forward Identity)» بوده است.",
+        "طراحی فشن‌محور، دور از کلیشه‌های سالن‌های زیبایی.",
       descriptionLine2Emphasis: true,
-      statusLabel: "در حال توسعه",
-      viewLabel: "بزودی",
-      url: "#",
+      statusLabel: "تکمیل شده",
+      viewLabel: "مشاهده پروژه",
+      url: "https://fatemehnegari.ir",
     },
   ],
   photo: "/amir.jpg",
