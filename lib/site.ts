@@ -35,6 +35,18 @@ export const site = {
       viewLabel: "مشاهده پروژه",
       url: "https://fatemehnegari.ir",
     },
+    {
+      name: "Nobakht",
+      image: "/nobakht.png",
+      imageAlt: "لوگوی نوبخت",
+      descriptionLine1:
+        "فروشگاه پوشاک زنانه و مردانه با استایلی شیک، کلاسیک و به‌روز.",
+      descriptionLine2:
+        "از کت و پالتو تا لباس‌های مجلسی؛ انتخابی خاص برای هر موقعیت.",
+      statusLabel: "درحال توسعه",
+      viewLabel: "مشاهده پروژه",
+      url: "https://nobakhtshop.ir",
+    },
   ],
   photo: "/amir.jpg",
   year: "2026",
