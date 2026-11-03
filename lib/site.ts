@@ -1,4 +1,4 @@
-export const site = {
+﻿export const site = {
   url: "https://amirhosseinbayat.ir",
   name: "امیرحسین بیات",
   nameEn: "AmirHossein Bayat",
@@ -39,6 +39,7 @@ export const site = {
       name: "Nobakht",
       image: "/nobakht.png",
       imageAlt: "لوگوی نوبخت",
+      logoAvatar: true,
       descriptionLine1:
         "فروشگاه پوشاک زنانه و مردانه با استایلی شیک، کلاسیک و به‌روز.",
       descriptionLine2:
