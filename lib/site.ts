@@ -8,8 +8,12 @@
   bioLine1: "فعلاً تمرکزم روی توسعه وب و ساخت پروژه‌های واقعی است؛",
   bioLine2: "از طراحی رابط کاربری تا پیاده‌سازی و تکمیل محصول",
   projectsInProgressHeading: "پروژه‌های تکمیل شده",
+  // Each project's `id` is permanent and public (it is part of the
+  // /api/support/catalog contract). Never change it, reuse it, or derive it
+  // from the name, the URL or the array position.
   inProgressProjects: [
     {
+      id: "serikashop",
       name: "SerikaShop",
       image: "/serikashop.png",
       imageAlt: "لوگوی SerikaShop",
@@ -22,6 +26,7 @@
       url: "https://serikashop.ir",
     },
     {
+      id: "negari",
       name: "Negari",
       image: "/negari.png",
       imageAlt: "لوگوی Negari",
@@ -36,6 +41,7 @@
       url: "https://fatemehnegari.ir",
     },
     {
+      id: "nobakht",
       name: "Nobakht",
       image: "/nobakht.png",
       imageAlt: "لوگوی نوبخت",
